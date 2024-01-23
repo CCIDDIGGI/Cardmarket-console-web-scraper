@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+namespace program
+{
+  class CardmarketWebScraper
+    {
+        static void Main(String[] args)
+        {
+            //init commit
+            Console.WriteLine("Initial commit!");
+            Console.ReadLine();
+        }
+    }
+}
