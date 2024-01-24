@@ -30,15 +30,11 @@ namespace program
                 var HTMLElementsForCardName = document.DocumentNode.QuerySelectorAll("div.width-productName");
                 var HTMLElementsForCardPrice = document.DocumentNode.QuerySelectorAll("div.algn-r");
 
-                //probaly because we are making too many requests to the site
-                Console.WriteLine(HTMLElementsForCardName.Count);
-
                 //iterating over the list of producsHTMLElements
                 for (int i = 0; i < HTMLElementsForCardName.Count; i++)
                 {
                     //scraping the interesting data from the current htmlElement
                     string name = HtmlEntity.DeEntitize(HTMLElementsForCardName[i].QuerySelector("div").InnerText);
-
                     string price = HtmlEntity.DeEntitize(HTMLElementsForCardPrice[i].QuerySelector("div").InnerText);
 
                     //instancing a new pokemonCard object
